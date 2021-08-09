@@ -1,4 +1,5 @@
 import 'package:catalogdelapan/pages/login_page.dart';
+import 'package:catalogdelapan/utils/routers.dart';
 import 'package:flutter/material.dart';
 import 'package:catalogdelapan/pages/home_page.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -25,8 +26,8 @@ class MyApp extends StatelessWidget {
       initialRoute: "/home",
       routes: {
         "/": (cotext) => new HomePage(),
-        "/home": (cotext) => LoginPage(),
-        "/Login": (cotext) => LoginPage(),
+        MyRoutes.homeRoute: (cotext) => LoginPage(),
+        MyRoutes.loginRoute: (cotext) => LoginPage(),
       },
     );
   }

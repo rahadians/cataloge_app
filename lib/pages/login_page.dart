@@ -1,5 +1,6 @@
-import 'dart:html';
+// import 'dart:html';
 
+import 'package:catalogdelapan/utils/routers.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -19,7 +20,6 @@ class LoginPage extends StatelessWidget {
                 'assets/images/mobile_login_2.png',
               ),
               fit: BoxFit.fill,
-              height: 400,
             ),
             SizedBox(height: 20),
             Text(
@@ -47,7 +47,7 @@ class LoginPage extends StatelessWidget {
                   ),
                   ElevatedButton(
                       onPressed: () {
-                        print("Hi Rahadian");
+                        Navigator.pushNamed(context, MyRoutes.homeRoute);
                       },
                       child: Text("Login"),
                       style: TextButton.styleFrom())
