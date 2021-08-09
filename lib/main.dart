@@ -25,9 +25,9 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: "/home",
       routes: {
-        "/": (cotext) => new HomePage(),
-        MyRoutes.homeRoute: (cotext) => LoginPage(),
-        MyRoutes.loginRoute: (cotext) => LoginPage(),
+        "/": (context) => HomePage(),
+        MyRoutes.homeRoute: (context) => LoginPage(),
+        MyRoutes.loginRoute: (context) => LoginPage(),
       },
     );
   }
