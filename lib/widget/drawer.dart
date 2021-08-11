@@ -22,8 +22,11 @@ class MyDrawer extends StatelessWidget {
                     accountName: Text("Rahadian"),
                     accountEmail: Text("matrix.black82@gmail.com"),
                     currentAccountPicture: CircleAvatar(
+                      radius: 50,
                       backgroundImage: NetworkImage(imageUrl),
-                    ))),
+                    )
+                )),
+
             ListTile(
                 leading: Icon(
                   CupertinoIcons.home,
