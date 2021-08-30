@@ -20,6 +20,10 @@ class Item{
   final String image;
 
   Item({this.id, this.name, this.desc, this.price, this.color, required this.image});
+
+  // factory Item.fromMap(Map<String,dynamic> map){
+  //
+  // };
 }
 
 final products = [
